@@ -1,0 +1,34 @@
+I.I Python Intro
+
+python advanteages
+1. code clean and simple
+2. multiple purpose : data analysis, AI/ML, automations, web app, hack, mobi app
+3. high payment
+
+desirable
+1. high-level
+2. cross-platform
+3. huge-community
+4. large-ecosystem
+20 years
+
+I.II instalasi python win && mac
+I.III cmd -> python -> that is python interpreter
+I.IV code editor --> code editor \/ IDE 
+IDE : PyChram
+-autocompletion
+debugging
+testing
+code editor : vscode, atom, sublime
+
+I.V code vscode
+python has built in function, like remote, remote embedded with some features
+ctrl + ` --> to access python
+
+I.VI Turn vscode to IDE
+-linting
+-debugging
+-autocompletion
+-codeFormatting
+-Unit Testing
+-Code snippets

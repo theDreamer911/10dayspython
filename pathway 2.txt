@@ -1,0 +1,46 @@
+There is several data =--> primitives data
+numbers, boolean, string
+numbers = int, decimal(float)
+boolean = True, False ===> case sensitive 
+string = text
+
+
+How to write a beautiful variable
+1) Make sure must descriptive and meaningful
+	Do = lunch_food, morning_routine
+	Don't = lf, mr
+2) If dealing with quadrant, is oke to use x, y, xy 
+3) Using the lowercase
+	Do = code_well, learn_fast
+	Don't = CODE_WELL, Learn_Fast
+4) Using underscore name to put two words separate by space
+	Do = sleep_wll, luck_point
+	Don't = sleep well, luck point
+5) Giving a space code after make a variable and before the value
+	Do => today_point = 100
+	Don't => today_point=100
+	
+
+
+Python Escape Sequence
+# \  --> main function to escaping
+# \' --> to escape "'" character
+# \\ --> print one backslash
+# \n --> new line
+
+
+
+Python Formatted String
+first = "Hand"
+last = "Pratama"
+full = f"{first} {last}"
+print(full)
+
+
+Truthy and Falsy
+Falsey = "", 0, None
+Truthy = anything else
+
+
+
+What are the primitives types in python : string, numbers, boolean

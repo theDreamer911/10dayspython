@@ -1,0 +1,10 @@
+what is an expression
+	expression is piece of code that produced a value
+		"*" * 3 ==> "***"
+		
+what is syntax error
+	is a code that have bad syntax or bad code
+
+
+what does a linter do
+	is a tools to check a syntex error
