@@ -1,0 +1,8 @@
+sometimes program will get an error
+	using error exception, make it cool
+	
+there some view :
+use try excep
+	raise
+	
+if have multiple exception use it in one line (exception1, exception2)

@@ -1,0 +1,33 @@
+create custom class
+class = blueprint for creating new objects
+object = instance of a class
+
+class: human
+objects: John, Mary, Jack
+
+class rule:
+use first character uppercase and separated with underscore
+
+__init__ : magic method
+
+instance is an attribute that belong to point instances or point object
+
+all human has two eyes and two ears, 
+Attribute define on class level
+  on object reference we can use it
+    if change class level value, we change all object that reference on it
+	
+	
+	
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+
+point = Point(1, 2)
+other = Point(1, 2)
+print(point == other)
+
+
+the answer will be false, because it check the memory references. To compare it, we need a magic method

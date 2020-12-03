@@ -1,0 +1,67 @@
+Do you know what is the reason why python is case sensitive???
+if we run this
+	>> "love" == "love"
+	>> True
+but if we run this
+	>> "love" == "LOVE"
+	>> False
+
+WHY???, it because this
+	>> ord("l")		| >> ord("L")
+	>> 108			| >> 76
+	>> ord("o")		| >> ord("O")
+	>> 111			| >> 79
+	>> ord("v")		| >> ord("V")
+	>> 118			| >> 86
+	>> ord("e")		| >> ord("E")
+	>> 101			| >> 69
+
+Find the differences???
+	108, 111, 118 101 != 76, 79, 86, 69
+
+
+Conditional Statements
+	normally vscode will give two space indentation, but formatter will give two block space (4 space indentation)
+
+NOT EFFECTIVE
+price = 20
+if price >= 20:
+	print('normal')
+else:
+	print('cheap')
+
+MORE EFFECTIVE
+price = 20
+if price >= 20:
+	pay = 'normal'
+else:
+	pay = 'cheap'
+print(pay)
+
+Trenary Operator
+price = 20
+pay = 'normal' if price >= 20 else 'cheap'
+print(pay)
+
+Logical Operator
+and
+or
+not
+
+# chaining comparison
+-- old --
+age = 22
+if age >= 18 and age <65:
+  print('eligible')
+  
+in math  -> if 18 <= age < 65
+
+-- new --
+age = 22
+if 18 <= age < 65:
+  print('eligible')
+  
+  
+Range is iterable it's mean we can iterate over, string is also iterable, and also list
+  
+  

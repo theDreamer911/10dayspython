@@ -1,0 +1,51 @@
+Why we need build function
+  When we build a program we maybe get hundred or thousand, to make it cleaner build our function
+  
+Give two line break after write function to make it cleaner
+
+def greet():
+    print('Hi There')
+    print('Welcome Aboard')
+
+
+greet()
+---
+
+print() take any input
+greet() don't take any function
+
+parameter vs argument
+parameter : the input that we define in a function
+argument  : the value for given parameter
+
+Type function
+1) perform a task
+2) return a value
+
+round(1.9) -> return a value
+
+a function default value is none- it can be found as absensce of a value
+
+
+tupples and list = collection of variable
+different tupples can't be changed
+
+xargs
+def multiply(*numbers):
+    # print(numbers)
+    total = 1
+    for number in numbers:
+        # print(number)
+        # total = total * number
+        total *= number
+    return total
+
+
+print(multiply(2, 3, 4, 5))
+
+the logic is the tupples will itterate and times to the total, after that, total will multiple again- in the end will output the answer
+
+xxargs --> to make arguments can take parameter from user and save it into dictionary
+
+
+global isn't python way, so if we can avoid for using it, avoid it

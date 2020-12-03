@@ -1,0 +1,129 @@
+list in python
+  can build by number, string, boolean, or combination of them
+    can update with list too
+
+how to write 100 list of 0 :
+	zero = [0] * 100
+	print(zero)
+
+list can iterate itself and string
+numbers = list(range(20)) -> build 20 number
+print(numbers)
+
+char = list("hellya")
+print(char)
+print(len(char))
+
+tips using list
+  letter[0:3]  three first word
+  letter[:3]   three first word
+  letter[0:]   all word from 0 (first word)
+  letter[:]    duplicate the original string
+  numbers[::2]  two step ascending
+  numbers[::-2] two step descending
+
+
+
+List Unpack
+numbers = [1,2,3]
+first, second, third = numbers  --> must be same in size
+
+old way
+first = numbers[0]
+second = numbers[1]
+third = numbers[2]
+
+
+numbers = [1,2,3,4,5,4,5,5,5, 8]
+first, second, *other, last = numbers
+print(first) --> 1
+print(other) --> [3,4,5,4,5,5,5]
+print(last) --> 8
+
+
+
+Looping over list 
+  using for loops
+  
+ 
+Add or remove items in list
+add 
+  <> end  : append('string')
+  <> free : insert(0, "-")
+
+remove
+  <> end  : pop() or pop(index)
+  <> free : remove('string')
+  <> all  : clear()
+  <> freely : del expression[index0 : index1]
+  
+everything in python is an object, so with dot, we can access the method 
+
+
+find in object
+
+
+lamda function -> anonymous function that can pass another function in one line
+map function -> taking a lamda function and iteration, to iterate from list
+filter function -> make a filtered parameter with help from lamda function
+
+map, filter object is iterable
+
+list comprehension --> another way to make code far cleaner 
+items = [
+    ("Product1", 10),
+    ("Product2", 9),
+    ("Product3", 12),
+    ("Product3", 4),
+    ("Product3", 20),
+]
+mapping = [item for item in items]
+filtering = [item for item in items if item[1] >= 10] --> filter dengan parameter
+
+zip -> to union list into tupples
+
+stack behavior
+LIFO -> Last In First Out
+
+
+queues
+FIFO -> First In First Out
+
+module = a bunch of bucket with full with reuseable code
+
+tuples -> a read only list, can't be modified
+	point = () -> tuple
+	point = 1, -> tuple
+	point = (1, 2, 3) -> tuple
+	point = (1,2) * 3 -> tuple
+	point = 1 -> integer
+	point = tuple([1,2,3]) -> tuple
+
+Where to put tuples = sequence of object, don't accidently edit the object, prevent list accidently error
+
+How to swap variable
+x = 10
+y = 11
+
+by using third variable
+z = x
+x = y
+y = z
+
+by using tuple
+x, y = y, x
+
+print('x:', x, ', y:', y)
+
+because we make tuple on it
+  	
+
+array is not default type of python, use it whenever we got bad performance when using list
+i recommend for use list if a little code
+
+
+sets = collection of unordered unique item we can't have duplicate, this object are not in sequence so we can't access it using an index
+
+dictionary = collection of key value pair
+
+generator don't store the values, so we can't use the len function on it
