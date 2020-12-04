@@ -31,3 +31,56 @@ print(point == other)
 
 
 the answer will be false, because it check the memory references. To compare it, we need a magic method
+
+
+unpythonic is not using a best practice of python when coding
+
+let's use property
+
+
+
+Inheritance
+  The concept of make some general method in one place, so it will not repeated
+    
+Two => inheritance & composition
+DRY = Don't Repeat Yourself
+
+
+The Object Class
+isinstance() -> if an object is an instance of an class
+
+Every class in python is directly or indirectly isinstance with object class
+
+
+Method Overriding --> REPLACING OR EXTENDING THE METHOD DEFINE IN THE BASE Class
+
+Multi Level Inheritance, too much of good thing is a bad thing, and that's very true in inheritance
+  because too much inheritance can make new several issues
+
+Employee -> person -> livingCreature -> Thing
+
+That's very bad, because just because an employee is person, and a person is livingCreature doesn't mean every man must have class like that
+
+LIMITED THE Inheritance in one or max two
+
+---
+Multiple inheritance --> if not use properly it will make bug
+  it can be bad if we don't use it properly
+    if a class doesn't have everything in common, this is good
+
+Good Example of inheritance :
+1) Don't have multilevel inheritance
+2) Actually it's okey, but to avoid bug
+3) Don't have multiple inheritance  
+
+
+Abstract Base Class:
+1) Make a subclass to access the base class, becoz it will make easier to understand
+
+-> abstract base class is a half bake cookie
+        it doesn't already to be eaten
+		  purpose to provide common code to it's derivates
+
+
+Polymorphosim
+

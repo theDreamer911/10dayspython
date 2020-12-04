@@ -1,0 +1,109 @@
+Why we use regular expressions
+	<> Make easier to find date and time
+	<> Find email that valid
+	<> Verify phone number and find the countery to which it belongs
+	<> Make changing / replace data to be easier
+	Can be used in multiple programming language
+
+what are regular expressions
+	Special text string for describing a search pattern, 
+	
+==DATA==
+NameAge = """
+	Jenice is 22 and Theon is 33 Gabriel is 44 and Joey is 21
+"""
+
+==REGEX==
+It turns into dictinary that contain, like this
+  {'Janice': '22', 'Theon':'33', 'Gabriel':'44','Joey'::'21'}
+
+==How it Works==
+First letter of all the names is an uppercase letter and Age is represented by numbers
+
+ages = re.findall(r'\d{1,3}', NameAge)
+names = re.findall(r'[A-Z][a-z]*', NameAge)
+
+--
+Both the string and RegEx have theri own cursor
+if we put something in regex, the program will check the text, which one is the right one, so it will put it in regex
+
+
+basic regular expressions operations
+  <> Find a word in a string
+  <> Generate an iterator
+  <> Match one of any of several letters --> match words with a particullar pattern
+  <> Match series of range of characters  --> match series of range of characters
+  <> Replace String   --> Replace a string
+  <> Match a Single Character   
+		\b: backspace
+		\f: formfeed
+		\r: carriage return
+		\t: tab
+		\v: vertical tab
+		
+		
+		===
+		\d: match any any number
+		\D: anything but a number
+		===
+		kalo pake \d nanti angkanya keluar, kalo \D gak keluar 
+		--> digunaiin pas cari angka dimenit 31 an video
+
+email verification using regular expressions
+
+Email should :
+	<> 1 to 20 lowercase and uppercase letters, numbers, plus characters special
+	<> @ symbol
+	<> 2 to 20 lowercase adn uppercase letter, numbers, plus
+	<> A period
+	<> 2 to 30 lowercase and uppercase letters
+
+phone number verification using regular expressions
+Veriry phone numbers
+Phone Number
+444-122-1234
+123-122-78999
+111-123-23
+67-7890-2019
+
+All phone numbers should have:
+	<> 3 starting digits and '-' sign
+	<> 3 middle digits and '-' sign
+	<> 4 digits in the end
+	
+	
+	\w = [a-z, A-Z, 0-9, _]
+	\W = [^a-z, A-Z, 0-9, _]
+	
+	
+For Name
+	\s [\f\n\r\t\v]
+	\s [^\f\n\r\t\v] - semua simbol kecuali f n r t v
+
+
+web scraping using regular expressions
+  Scrap all the phone numbers from a webpage using reguler expressions
+
+	-> punyaku error module email.parser not found
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

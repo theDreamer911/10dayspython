@@ -1,0 +1,23 @@
+Concept in programming
+we should separte our code into modules modules
+  just like supermarket
+  
+High related sequence = module must be the same 
+
+so we separete into file file
+just like app.py and sale.py
+
+in app.py we want to take one module from sale.py 
+  to do that
+  
+from sale import module1, module2, ...
+
+sale = the name of file
+module1 = class inside the file that dedicated, we can use *, but that was a bad practice
+
+another way
+
+import sale
+sale.module1
+
+because inside the sale it will be a method
